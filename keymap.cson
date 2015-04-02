@@ -1,10 +1,8 @@
-# Emacs keybinding for Atom editor - add it/store it as ~/.atom/keymap.cson
 
 'body':
   'ctrl-g': 'core:cancel'
   'alt-x': 'command-palette:toggle'
   'ctrl-x k': 'core:close'
-  'ctrl-x ctrl-f': 'fuzzy-finder:toggle-file-finder'
   'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder'
   'ctrl-x 3': 'pane:split-right'
   'ctrl-x 2': 'pane:split-down'
@@ -48,12 +46,18 @@
   'ctrl-r': 'find-and-replace:show'
   # file
   'ctrl-x ctrl-s': 'core:save'
-  'ctrl-x o': 'application:open-file'
+  'ctrl-x ctrl-w': 'core:save-as'
+  'ctrl-x ctrl-f': 'application:open-file'
+  'ctrl-shift-t': 'fuzzy-finder:toggle-file-finder'
   # completion
   'alt-/': 'command-palette:toggle'
   # application
   'ctrl-g': 'core:cancel'
+  'ctrl-x k': 'pane:close'
   'ctrl-x ctrl-c': 'application:quit'
+  # other
+   # ctrl-t   find any file in the project
+   # ctrl-,   open settings view
 
 '.platform-linux .editor':
   'ctrl-a': 'editor:move-to-first-character-of-line'
