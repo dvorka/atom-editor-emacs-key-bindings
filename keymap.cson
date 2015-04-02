@@ -1,0 +1,89 @@
+# Emacs keybinding for Atom editor - add it/store it as ~/.atom/keymap.cson
+
+'body':
+  'ctrl-g': 'core:cancel'
+  'alt-x': 'command-palette:toggle'
+  'ctrl-x k': 'core:close'
+  'ctrl-x ctrl-f': 'fuzzy-finder:toggle-file-finder'
+  'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder'
+  'ctrl-x 3': 'pane:split-right'
+  'ctrl-x 2': 'pane:split-down'
+  'ctrl-x 0': 'pane:close'
+  'ctrl-x 1': 'pane:close-other-items'
+  'ctrl-x o': 'window:focus-next-pane'
+
+'.editor:not(.mini):not(.autocomplete-active)':
+  # navigation
+  'up': 'core:move-up'
+  'down': 'core:move-down'
+  'left': 'core:move-left'
+  'right': 'core:move-right'
+  'ctrl-a': 'editor:move-to-first-character-of-line'
+  'ctrl-e': 'editor:move-to-end-of-screen-line'
+  'escape <': 'core:move-to-top'
+  'escape >': 'core:move-to-bottom'
+  'alt-<': 'core:move-to-top'
+  'alt->': 'core:move-to-bottom'
+  'ctrl-f': 'core:move-right'
+  'ctrl-b': 'core:move-left'
+  'ctrl-n': 'core:move-down'
+  'ctrl-p': 'core:move-up'
+  'alt-f': 'core:move-to-end-of-word'
+  'alt-b': 'core:move-to-beginning-of-word'
+  'ctrl-v': 'core:page-down'
+  'alt-v': 'core:page-up'
+  # selection
+  'ctrl-x h': 'core:select-all'
+  # editation
+  'ctrl-d': 'core:delete'
+  'ctrl-k': 'editor:cut-to-end-of-line'
+  'ctrl-x u': 'core:undo'
+  'ctrl-/': 'editor:toggle-line-comments'
+  # copy/paste
+  'ctrl-y': 'core:paste'
+  'ctrl-w': 'core:cut'
+  'alt-w': 'core:copy'
+  # search
+  'ctrl-s': 'find-and-replace:show'
+  'ctrl-r': 'find-and-replace:show'
+  # file
+  'ctrl-x ctrl-s': 'core:save'
+  'ctrl-x o': 'application:open-file'
+  # completion
+  'alt-/': 'command-palette:toggle'
+  # application
+  'ctrl-g': 'core:cancel'
+  'ctrl-x ctrl-c': 'application:quit'
+
+'.platform-linux .editor':
+  'ctrl-a': 'editor:move-to-first-character-of-line'
+  'ctrl-e': 'editor:move-to-end-of-screen-line'
+
+'.find-and-replace':
+  'ctrl-s': 'find-and-replace:find-next'
+  'ctrl-r': 'find-and-replace:find-previous'
+
+'.go-to-line .mini.editor input':
+  'ctrl-g': 'core:cancel'
+
+'.tree-view-dialog .mini.editor':
+  'ctrl-g': 'core:cancel'
+
+'.tool-panel.panel-left, .tool-panel.panel-right':
+  'ctrl-g': 'tool-panel:unfocus'
+
+'.platform-win32':
+  'alt-g g': 'go-to-line:toggle'
+  'ctrl-g': 'core:cancel'
+
+'.platform-win32 .go-to-line .mini.editor input':
+  'ctrl-g': 'core:cancel'
+
+'.platform-darwin':
+  'alt-g g': 'go-to-line:toggle'
+  'ctrl-g': 'core:cancel'
+
+'.platform-darwin .go-to-line .mini.editor input':
+  'ctrl-g': 'core:cancel'
+
+# eof
