@@ -1,5 +1,8 @@
+# Emacs key bindings for Atom 0.204
 
 'body':
+  'ctrl-x ctrl-f': 'application:open-file'
+  'ctrl-shift-t': 'fuzzy-finder:toggle-file-finder'
   'ctrl-g': 'core:cancel'
   'alt-x': 'command-palette:toggle'
   'ctrl-x k': 'core:close'
@@ -10,7 +13,7 @@
   'ctrl-x 1': 'pane:close-other-items'
   'ctrl-x o': 'window:focus-next-pane'
 
-'.editor:not(.mini):not(.autocomplete-active)':
+'atom-text-editor:not([mini])':
   # navigation
   'up': 'core:move-up'
   'down': 'core:move-down'
@@ -42,6 +45,8 @@
   'ctrl-w': 'core:cut'
   'alt-w': 'core:copy'
   # search
+  #'ctrl-s': 'find-and-replace:find-next'
+  #'ctrl-r': 'find-and-replace:find-previous'
   'ctrl-s': 'find-and-replace:show'
   'ctrl-r': 'find-and-replace:show'
   # file
@@ -49,17 +54,29 @@
   'ctrl-x ctrl-w': 'core:save-as'
   'ctrl-x ctrl-f': 'application:open-file'
   'ctrl-shift-t': 'fuzzy-finder:toggle-file-finder'
+  # tab/buffers
+  'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder'
   # completion
-  'alt-/': 'command-palette:toggle'
+  'alt-/': 'autocomplete:toggle'
+  'alt-x': 'command-palette:toggle'
+  'ctrl-shift-c': 'command-palette:toggle'
   # application
   'ctrl-g': 'core:cancel'
   'ctrl-x k': 'pane:close'
   'ctrl-x ctrl-c': 'application:quit'
   # other
-   # ctrl-t   find any file in the project
-   # ctrl-,   open settings view
+   # ctrl-t           find any file in the project
+   # ctrl-,           open settings view
+   # ctrl-tab         next tab
+   # ctrl-shift-tab   previous tab
+   # ctrl-\           left panel tree view toggle
+   # ctrl-+ ctrl--    zoom/unzoom
 
-'.platform-linux .editor':
+  # NON Emacs bindings - IDE/browser like
+  'ctrl-b': 'bookmarks:toggle-bookmark'
+  'ctrl-shift-b': 'bookmarks:view-all'
+
+'.platform-linux atom-text-editor':
   'ctrl-a': 'editor:move-to-first-character-of-line'
   'ctrl-e': 'editor:move-to-end-of-screen-line'
 
@@ -67,27 +84,27 @@
   'ctrl-s': 'find-and-replace:find-next'
   'ctrl-r': 'find-and-replace:find-previous'
 
-'.go-to-line .mini.editor input':
+'.go-to-line atom-text-editor[mini] input':
   'ctrl-g': 'core:cancel'
 
-'.tree-view-dialog .mini.editor':
+'.tree-view-dialog atom-text-editor[mini]':
   'ctrl-g': 'core:cancel'
 
-'.tool-panel.panel-left, .tool-panel.panel-right':
+'atom-panel.left, atom-panel.right':
   'ctrl-g': 'tool-panel:unfocus'
 
 '.platform-win32':
   'alt-g g': 'go-to-line:toggle'
   'ctrl-g': 'core:cancel'
 
-'.platform-win32 .go-to-line .mini.editor input':
+'.platform-win32 .go-to-line atom-text-editor[mini] input':
   'ctrl-g': 'core:cancel'
 
 '.platform-darwin':
   'alt-g g': 'go-to-line:toggle'
   'ctrl-g': 'core:cancel'
 
-'.platform-darwin .go-to-line .mini.editor input':
+'.platform-darwin .go-to-line atom-text-editor[mini] input':
   'ctrl-g': 'core:cancel'
 
 # eof
