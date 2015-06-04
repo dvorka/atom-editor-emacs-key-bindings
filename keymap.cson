@@ -1,14 +1,17 @@
 # Emacs key bindings for Atom 0.204
 
 'body':
+  # find a command (Emacs like)
+  'alt-x': 'command-palette:toggle'
+  # find opened buffer (Emacs like)
+  'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder'
+  # find resource (Eclipse like)
+  'ctrl-shift-t': 'fuzzy-finder:toggle-file-finder'
   'ctrl-x ctrl-f': 'application:open-file'
   'ctrl-x ctrl-n': 'application:new-file'
   'ctrl-x ctrl-d': 'application:open-folder'
-  'ctrl-shift-t': 'fuzzy-finder:toggle-file-finder'
   'ctrl-g': 'core:cancel'
-  'alt-x': 'command-palette:toggle'
   'ctrl-x k': 'core:close'
-  'ctrl-x b': 'fuzzy-finder:toggle-buffer-finder'
   'ctrl-x 3': 'pane:split-right'
   'ctrl-x 2': 'pane:split-down'
   'ctrl-x 0': 'pane:close'
