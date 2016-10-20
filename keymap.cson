@@ -34,8 +34,8 @@
   'ctrl-b': 'core:move-left'
   'ctrl-n': 'core:move-down'
   'ctrl-p': 'core:move-up'
-  'alt-f': 'core:move-to-end-of-word'
-  'alt-b': 'core:move-to-beginning-of-word'
+  'alt-f': 'editor:move-to-end-of-word'
+  'alt-b': 'editor:move-to-beginning-of-word'
   'ctrl-v': 'core:page-down'
   'alt-v': 'core:page-up'
   # selection
