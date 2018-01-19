@@ -78,7 +78,7 @@
    # ctrl-+ ctrl--    zoom/unzoom
 
   # NON Emacs bindings - IDE/browser like
-  'ctrl-b': 'bookmarks:toggle-bookmark'
+  #'ctrl-b': 'bookmarks:toggle-bookmark'
   'ctrl-shift-b': 'bookmarks:view-all'
 
 '.platform-linux atom-text-editor':
